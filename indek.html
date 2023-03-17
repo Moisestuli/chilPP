@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Moisés Antonio Cambuta Tulitekule</h1>
+    <img src="tulitekule.jpg" alt="My Profile Picture">
+    <p>A short description about myself</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+    </ul>
+  </nav>
+  <section id="video-background">
+    <video autoplay muted loop>
+      <source src="HTML & CSS Full Course - Beginner to Pro.mp4" type="video/mp4">
+      <source src="video.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Welcome to my portfolio</h1>
+      <p>Learn more about my skills and experience.</p>
+      <a href="#about" class="btn btn-primary">Learn More</a>
+    </div>
+  </section>
+  
+  
+  <main>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <img src="tulitekule.jpg" alt="Project Image">
+      <p>A brief description of my project</p>
+    </section>
+    
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+    
+    <section id="achievements">
+      <h2>My Achievements</h2>
+      <ul>
+        <li>Award 1</li>
+        <li>Award 2</li>
+        <li>Award 3</li>
+      </ul>
+    </section>
+    <section id="partners">
+        <div class="container">
+          <h2>Our Partners</h2>
+          <hr>
+          <div id="partner-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#partner-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#partner-carousel" data-slide-to="1"></li>
+              <li data-target="#partner-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="uriel.jpg" class="d-block w-100" alt="Partner 1">
+              </div>
+              <div class="carousel-item active">
+                <img src="uriel2.jpg" class="d-block w-100" alt="Partner 2">
+              </div>
+              <div class="carousel-item active">
+                <img src="uriel3.jpg" class="d-block w-100" alt="Partner 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#partner-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#partner-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--  form   -->
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <hr>
+          <div class="row">
+            <div class="col-md-8">
+              <form action="send-email.php" method="post">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn1 btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h3>Get in Touch</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae massa euismod, fermentum est et, bibendum mauris.</p>
+              <p><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown USA</p>
+              <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+              <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+  </main>
+  
+  <footer>
+    <p>Contact me:</p>
+    <ul>
+      <li>Email: myemail@example.com</li>
+      <li>Phone: 123-456-7890</li>
+    </ul>
+    <p>Follow me:</p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/myprofile">LinkedIn</a></li>
+      <li><a href="https://twitter.com/myprofile">Twitter</a></li>
+      <li><a href="https://twitter.com/myprofile">facebook</a></li>
+      <li><a href="https://twitter.com/myprofile">whasapp</a></li>
+      <li><a href="https://twitter.com/myprofile">Gmail</a></li>
+      <li><a href="https://twitter.com/myprofile">Twitter</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
